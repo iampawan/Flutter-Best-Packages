@@ -12,7 +12,7 @@ class AliceExample extends StatefulWidget {
 class _AliceExampleState extends State<AliceExample> {
   var output;
   getHttpRequest() async {
-    var res = await http.get("https://jsonplaceholder.typicode.com/posts");
+    var res = await http.get("https://jsonplaceholder.typicode.com/posts/1");
     setState(() {
       output = jsonDecode(res.body);
     });
@@ -21,7 +21,7 @@ class _AliceExampleState extends State<AliceExample> {
 
   postHttpRequest() async {
     var res = await http.post("https://jsonplaceholder.typicode.com/posts",
-        body: {"Name": "Pawan"});
+        body: {"Name": "HTTP"});
     setState(() {
       output = jsonDecode(res.body);
     });
@@ -38,7 +38,7 @@ class _AliceExampleState extends State<AliceExample> {
 
   postDioRequest() async {
     var res = await Dio().post("https://jsonplaceholder.typicode.com/posts",
-        data: {"Name": "Pawan"});
+        data: {"Name": "DIO"});
     setState(() {
       output = res;
     });
