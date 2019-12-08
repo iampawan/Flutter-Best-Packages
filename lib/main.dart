@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'library/alice_example.dart';
+import 'package:flutter_best_packages/library/flutter_spinkit_example.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,11 +11,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       navigatorKey: navigatorKey,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: AliceExample(),
+      theme: ThemeData(primarySwatch: Colors.cyan, brightness: Brightness.dark),
+      home: FlutterSpinkitExample(),
     );
   }
 }
