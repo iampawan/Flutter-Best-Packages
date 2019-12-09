@@ -12,7 +12,7 @@ class _FlutterSpinkitExampleState extends State<FlutterSpinkitExample>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Flutter Spinkit"),
+        title: Text("Flutter Spinkit"), 
       ),
       body: GridView.count(
         crossAxisCount: 5,
