@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_best_packages/library/flutter_spinkit_example.dart';
+import 'package:flutter_best_packages/library/intro_example.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       navigatorKey: navigatorKey,
       theme: ThemeData(primarySwatch: Colors.cyan, brightness: Brightness.dark),
-      home: FlutterSpinKitExample(),
+      home: IntroScreen(),
     );
   }
 }
