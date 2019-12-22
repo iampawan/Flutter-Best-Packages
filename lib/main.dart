@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       navigatorKey: navigatorKey,
       theme: ThemeData(primarySwatch: Colors.cyan, brightness: Brightness.dark),
-      home: FlutterSpinkitExample(),
+      home: FlutterSpinKitExample(),
     );
   }
 }
